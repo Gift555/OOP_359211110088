@@ -1,8 +1,9 @@
 package OOPlab5;
+
 //  introduction to array in java
 
 public class TestArray {
-    public static void main (String[] args) {
+    public static void main (String[] args){
         //Array
         int number[];
         number = new int[5];
@@ -18,17 +19,26 @@ public class TestArray {
         System.out.println(number[3]);
         System.out.println(number[4]);
 
+
+
         int total = 0;
-        for (int i = 0; i < number.length; i++)
+        for (int i=0;i<number.length;i++) {
             System.out.println("number[" + i + "]: " + number[i]);
-            total += number[i]; //total in array is "+total);
+            total += number[i];     //total = total+number[i]
+        }//for
+        System.out.println("Total in array is"+total);
 
-    }//for
-     System.out.println("total in array is"+total);
+        // double array
+        double value[] = new double[5];
+        for (int i=0;i<value.length;i++)
+            System.out.println(value[i]);
+        //String array
+        String msg[] = new String[5];
+        for (int i=0;i<msg.length;i++)
+            System.out.println(msg[i]);
 
-    double value [] = new double[5];
-    for (int i=0;i<value.length;i++)
-        system.out.prinln       (value)
+
+
 
 
 
@@ -36,5 +46,4 @@ public class TestArray {
 
 
 }//class
-
 
